@@ -59,7 +59,7 @@ p {
 	transition: all 0.3s;
 }
 
-.description {
+.site-description {
 	text-align: center;
 	font-family: 'Yellowtail', sans-serif;
 	font-size: 20px;
@@ -165,17 +165,39 @@ h3 {
 .menu-indent {
 	margin-left: 20px;
 }
-
-/*.videoplayer {
-	width: 420px;
-	height: 315px;
-	border: 0px;
-	background: black;
-	border: 2px solid red;
-}*/
+.name {
+	font-weight: bold;
+	margin: -20px;
+}
+.description {
+	margin: -20px;
+}
+.prices {
+	font-style: italic;
+	margin: -20px;
+	padding-bottom: 10px;
+}
+.drink-name {
+	font-weight: bold;
+	margin: -20px;
+}
+.drink-price {
+	margin: -20px;
+}
+.dessert-name {
+	font-weight: bold;
+	margin: -20px;
+}
+.dessert-price {
+	margin: -20px;
+}
 .video {
 	padding-bottom: 40px;
 	border: 0px;
+}
+
+.space {
+	height: 20px;
 }
 
 .footer {

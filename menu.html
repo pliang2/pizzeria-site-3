@@ -45,102 +45,38 @@
 			</ul>
 			<p class="pizza-custom">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
 
+			<!-- Generates menu container for pizzas -->
+			<div class="pizza-menu"></div>
+
 			<div class="template pizza">
                 <div class="details">
-                    <h2 class="name"></h2>
+                    <p class="name"></p>
                     <p class="description"></p>
-                    <p>Department: <span class="dept"></span></p>
-                    <p class = "prices"><span class="small-price"></span></p>
+                    <p class="prices"><span class="small-price"></span> <span class="medium-price"></span> <span class="large-price"></span></p>
                 </div>
             </div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Meat Pies:</h3>
-					<ul>
-						<li class="pie-name">Classic Pepperoni
-							<ul>
-								<li class="pie-description">Pepperoni and Mozzarella on our Spicy Tomato Sauce. $10/$13/$16</li>
-							</ul>
-						</li>
-						<li class="pie-name">The Hawaiian
-							<ul>
-								<li class="pie-description">Canadian Bacon and Pineapple with Mozzarella on a rich Tomato Sauce.  $12/$14/$17
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">Duck, Duck, Goose
-							<ul>
-								<li class="pie-description">Roasted Duck and Goose with Bacon, Chestnuts on a rich Plum Sauce.  $15/$17/$19
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">The Bambi
-							<ul>
-								<li class="pie-description">Slow-cooked Venison with Red Cabbage on our famous Black Cherry Sauce.  $15/$17/$19
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">The Ultimate
-							<ul>
-								<li class="pie-description">Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2!  $15/$19/$23
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+            <h2>Drinks:</h2>
+            <div class="drink-menu"></div>
 
-				<div class="col-md-6">
-					<h3>Vegetarian Pies:</h3>
-					<ul>
-						<li class="pie-name">Margherita
-							<ul>
-								<li class="pie-description">Mozzarella, Basil, Salt on an Olive Oil Base.  $10/$13/$16
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">Veggie Madness
-							<ul>
-								<li class="pie-description">Mushroom, Black Olive, Onions, Roasted Garlic, Squash and Roasted Eggplant on our Spicy Tomato Sauce.  $11/$14/$17
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">Forest Floor
-							<ul>
-								<li class="pie-description">Three kinds of mushrooms with Mozzarella on a herb Tomato Sauce.  $11/$14/$17
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">Mr Green
-							<ul>
-								<li class="pie-description"> Roasted Chicken with Romano on a Basil Pesto sauce. $13/$16/$19
-								</li>
-							</ul>
-						</li>
-						<li class="pie-name">Purple Monster
-							<ul>
-								<li class="pie-description"> Roasted Eggplant and Cabbage stir fried in sesame oil on a rich Plum Sauce.  $11/$14/$17
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
+            <div class="template drink">
+                <div class="details">
+                    <p class="drink-name"></p>
+                    <p class="drink-price"></p>
+                </div>
+            </div>
 
-			<h3>Drinks:</h3>
-			<ul>
-				<li class="menu-indent">Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</li>
-				<li class="menu-indent">Rainier Beer by the can ($4)</li>
-				<li class="menu-indent">House Red Wine by the glass or bottle ($10/$40)</li>
-			</ul>
+			<h2>Desserts:</h2>
+            <div class="dessert-menu"></div>
 
-			<h3>Dessert:</h3>
-			<ul>
-				<li class="menu-indent">Chocolate Gelato ($8)</li>
-				<li class="menu-indent">Lemon Sorbet ($7)</li>
-				<li class="menu-indent">Ricotta Cheese Cake ($10)</li>
-			</ul>
+            <div class="template dessert">
+                <div class="details">
+                    <p class="dessert-name"></p>
+                    <p class="dessert-price"></p>
+                </div>
+            </div>
 
+            <div class="space"></div>
 			<div class="footer">
 				<p>&copy; 2013 Dawg Pizza</p>
 				<p>Call us for delivery: 206-555-1212</p>
@@ -149,5 +85,8 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+		<script src="js/menu-template.js"></script>
+		<script src="js/menu.js"></script>
 	</body>
 </html>

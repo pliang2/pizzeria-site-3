@@ -2,12 +2,15 @@ function pizzaDisplay(menu) {
 	var idx;
 	var pizza;
 	var template;
-	var pizzaMenu;
+	var meatPizzaMenu;
+	var vegPizzaMenu;
 	var instance;
 
 	template = $('.template');
-	pizzaMenu = $('.pizza-menu');
-	pizzaMenu.empty();
+	meatPizzaMenu = $('.meat-pizza-menu');
+	vegPizzaMenu = $('.veg-pizza-menu');
+	meatPizzaMenu.empty();
+	vegPizzaMenu.empty();
 
 	for (idx = 0; idx < com.dawgpizza.menu.pizzas.length; ++idx) {
 		instance = template.clone();
@@ -18,7 +21,12 @@ function pizzaDisplay(menu) {
 	    instance.find('.medium-price').html("$" + pizza.prices[1] + "/");
 	    instance.find('.large-price').html("$" + pizza.prices[2]);
 	    instance.removeClass('template');
-	    pizzaMenu.append(instance);
+	    if (pizza.vegetarian) {
+	    	vegPizzaMenu.append(instance);
+	    }
+	    else {
+	    	meatPizzaMenu.append(instance);
+	    }
 
 	    //pizza.name = name of pizza
 	    //pizza.description = description of pizza

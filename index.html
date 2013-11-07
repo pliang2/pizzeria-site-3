@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<p class="store-name">Dawg Pizza</p>
+			<p class="page-name">Dawg Pizza</p>
 			<p class="site-description">Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</p>
 
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -32,9 +32,8 @@
 						<li><a href="about.html">About Us</a></li>
 		        	</ul>
 		        </div>
+		        <p class="delivery">Call us for delivery: 206-555-1212</p>
 			</nav>
-
-			<img class="main-pictures" src="img/pizza.jpg" alt="pizza sample">
 
 			<p><img class="contact-icon" src="img/clock.ico" alt="hours icon"> Business hours: 10:00am to 11:00pm, Monday through Saturday</p>
 			<p><img class="contact-icon" src="img/phone.png" alt="phone icon"> Phone: 206-555-1212</p>
@@ -42,14 +41,53 @@
 			<p><img class="contact-icon" src="img/email.ico" alt="email icon"> <a href="mailto:dawgpizzaseattle@gmail.com"> dawgpizzaseattle@gmail.com</a></p>
 			<p><img class="contact-icon" src="img/twitter.jpg" alt="twitter icon"> @DawgPizzaSea</p>
 
-			<div style="width: 420px; height: 315px; margin: 0 auto;">
-				<iframe class="video" width="420" height="315" src="http://www.youtube.com/embed/HWL__9yDu8I" allowfullscreen></iframe>
-			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div id="pawnee-carousel" class="carousel slide">
+						<!-- slide indicators -->
+					    <ol class="carousel-indicators">
+					        <li data-target="#pawnee-carousel" data-slide-to="0" class="active"></li>
+					        <li data-target="#pawnee-carousel" data-slide-to="1"></li>
+					        <li data-target="#pawnee-carousel" data-slide-to="2"></li>
+					        <li data-target="#pawnee-carousel" data-slide-to="3"></li>
+					    </ol>
 
-			<div class="footer">
-				<p>&copy; 2013 Dawg Pizza</p>
-				<p>Call us for delivery: 206-555-1212</p>
-			</div>
+					    <div class="carousel-inner">
+				        <!-- slide -->
+					        <div class="item active">
+					            <img src="img/pizza.jpg" alt="pizza sample">
+					        </div>
+					        <div class="item">
+					            <img src="img/bbq-pizza.jpg" alt="BBQ pizza sample">
+					        </div>
+					        <div class="item">
+					            <img src="img/pizza-sample-2.jpg" alt="pizza sample 2">
+					        </div>
+					        <div class="item">
+					            <img src="img/pizza-sample-3.jpg" alt="pizza sample 3">
+					        </div>
+					    </div>
+
+					    <!-- left-right controls -->
+					    <a class="left carousel-control" href="#pawnee-carousel" data-slide="prev">
+					        <span class="icon-prev"></span>
+					    </a>
+					    <a class="right carousel-control" href="#pawnee-carousel" data-slide="next">
+					        <span class="icon-next"></span>
+					    </a>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<img class="rating" src="img/stars-rating.gif" alt="stars rating" align="middle">
+					<p class="rating-text">3.5 out of 5 stars</p>
+					<p class="quote">&ldquo;One of the best pizza restaurants in the U-District!&rdquo;</p>
+					<p class="quoter">-The Seattle Times</p>
+					<p class="quote">&ldquo;...vegetarian options stand just as proud next to the meat pies.&rdquo;</p>
+					<p class="quoter">-Seattle Magazine</p>
+					<p class="quote">&ldquo;The Duck, Duck, Goose pizza is to die for. It's like going to heaven and back.&rdquo;</p>
+					<p class="quoter">-Seattle Weekly</p>
+				</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

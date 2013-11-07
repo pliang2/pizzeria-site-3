@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<p class="store-name">Dawg Pizza</p>
+			<p class="page-name">Dawg Pizza Menu</p>
 
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
@@ -31,11 +31,11 @@
 						<li><a href="about.html">About Us</a></li>
 		        	</ul>
 		        </div>
+		        <p class="delivery">Call us for delivery: 206-555-1212</p>
 			</nav>
 
-			<img class="main-pictures" src="img/counter.jpg" alt="order counter">
+			<img class="order" src="img/counter.jpg" alt="order counter">
 
-			<h1>Dawg Pizza Menu</h1>
 			<h2>Pizzas:</h2>
 			<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</p>
 			<ul>
@@ -46,7 +46,10 @@
 			<p class="pizza-custom">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
 
 			<!-- Generates menu container for pizzas -->
-			<div class="pizza-menu"></div>
+			<h3 class="pizza-title">Meat Pizzas</h3>
+			<div class="meat-pizza-menu"></div>
+			<h3 class="pizza-title">Vegetarian Pizzas</h3>
+			<div class="veg-pizza-menu"></div>
 
 			<div class="template pizza">
                 <div class="details">
@@ -75,12 +78,6 @@
                     <p class="dessert-price"></p>
                 </div>
             </div>
-
-            <div class="space"></div>
-			<div class="footer">
-				<p>&copy; 2013 Dawg Pizza</p>
-				<p>Call us for delivery: 206-555-1212</p>
-			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
